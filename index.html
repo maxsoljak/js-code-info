@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title></title>
+    <style>
+      :root {
+        --color: #44a;
+        font-family: sans serif;
+      }
+
+      main {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      main > *,
+      textarea {
+        display: block;
+        width: 100%;
+        resize: none;
+      }
+
+      textarea:focus {
+        outline: 2px solid var(--color);
+      }
+
+      h1 {
+        font-size: 125%;
+      }
+
+      h2 {
+        font-size: 100%;
+      }
+
+      pre {
+        border-left: 2px solid var(--color);
+        padding-left: 1em;
+      }
+
+      .keyword {
+        color: var(--color);
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <h1>JS Code Info</h1>
+      <label
+        >Input Code
+        <textarea rows="10"></textarea>
+      </label>
+      <h2>Computed Metrics</h2>
+      <p>Line Count: <output name="line-count">Not Implemented</output></p>
+      <p>Blank Line Count: <output name="blank-line-count">Not Implemented</output></p>
+      <p>Character Count: <output name="char-count">Not Implemented</output></p>
+      <h2>Highlighted Code</h2>
+      <pre><code>Not Implemented</code></pre>
+    </main>
+    <script>
+      const keywords = [
+        'async',
+        'await',
+        'break',
+        'case',
+        'catch',
+        'class',
+        'const',
+        'continue',
+        'default',
+        'delete',
+        'do',
+        'else',
+        'export',
+        'extends',
+        'false',
+        'for',
+        'function',
+        'goto',
+        'if',
+        'import',
+        'in',
+        'instanceof',
+        'let',
+        'new',
+        'null',
+        'private',
+        'protected',
+        'public',
+        'return',
+        'switch',
+        'this',
+        'throw',
+        'true',
+        'try',
+        'typeof',
+        'var',
+        'while',
+      ]
+
+      document.querySelector('textarea').addEventListener('input', update)
+
+      function update() {}
+
+      update()
+    </script>
+  </body>
+</html>
