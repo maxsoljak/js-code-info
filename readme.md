@@ -1,6 +1,6 @@
 # JS Code Info
 
-A JS line and chacter counter
+A JS line and character counter
 
 ## Learning Objectives
 
