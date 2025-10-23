@@ -19,7 +19,7 @@ Handout code is provided in [index.html](index.html). Extend this code to comple
 3. Update character count when source code is modified.
 4. Highlight the provided `keywords` in some form in the highlighted code section.
 
-> [!HINT]
+> [!TIP]
 > The provided `update` function is called on page load and `textarea` update.
 
 ## Example Solutions
