@@ -19,18 +19,8 @@ Handout code is provided in [index.html](index.html). Extend this code to comple
 3. Update character count when source code is modified.
 4. Highlight the provided `keywords` in some form in the highlighted code section.
 
-## Example Code
+## Example Solutions
 
-Here's the code used in the above screenshot:
+Once completed, your application should look something like this, and reflect updates live as the code in the `textarea` changes.
 
-```js
-function max(a, b) {
-  if (a > b) {
-    return a
-  } else {
-    return b
-  }
-}
-
-const a = max(3, 12)
-```
+<img width="600" height="564" alt="image" src="https://github.com/user-attachments/assets/de38d42e-9be3-4982-8546-f85170193f18" />
