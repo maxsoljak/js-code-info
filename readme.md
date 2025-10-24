@@ -27,3 +27,19 @@ Handout code is provided in [index.html](index.html). Extend this code to comple
 Once successfully completed, your application should look something like this, and reflect updates live as the code in the `textarea` changes.
 
 ![Example output](https://github.com/user-attachments/assets/de38d42e-9be3-4982-8546-f85170193f18)
+
+### Example Code
+
+The following example code was used in the above example:
+
+```js
+function max(a, b) {
+  if (a > b) {
+    return a
+  } else {
+    return b
+  }
+}
+
+const a = max(3, 12)
+```
