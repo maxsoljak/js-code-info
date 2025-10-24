@@ -22,7 +22,7 @@ Handout code is provided in [index.html](index.html). Extend this code to comple
 > [!TIP]
 > The provided `update` function is called on page load and `textarea` update.
 
-## Example Solutions
+## Example Output
 
 Once completed, your application should look something like this, and reflect updates live as the code in the `textarea` changes.
 
