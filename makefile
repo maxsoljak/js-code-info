@@ -5,3 +5,6 @@ dev-deps:
 
 test:
 	pytest
+
+clean:
+	rm -rf __pycache__
