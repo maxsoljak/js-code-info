@@ -14,9 +14,9 @@ After completing this lab, students will be able to:
 
 Handout code is provided in [index.html](index.html). Extend this code to complete the following tasks:
 
-1. Update total line count when source code is modified.
+1. Update total line count (including blank lines) when source code is modified.
 2. Update blank line count when source code is modified.
-3. Update character count when source code is modified.
+3. Update character count (including whitespace characters) when source code is modified.
 4. Highlight the provided `keywords` in some form in the highlighted code section.
 
 > [!TIP]
