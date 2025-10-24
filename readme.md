@@ -24,6 +24,6 @@ Handout code is provided in [index.html](index.html). Extend this code to comple
 
 ## Example Output
 
-Once completed, your application should look something like this, and reflect updates live as the code in the `textarea` changes.
+Once successfully completed, your application should look something like this, and reflect updates live as the code in the `textarea` changes.
 
-<img width="600" height="564" alt="image" src="https://github.com/user-attachments/assets/de38d42e-9be3-4982-8546-f85170193f18" />
+![Example output](https://github.com/user-attachments/assets/de38d42e-9be3-4982-8546-f85170193f18)
