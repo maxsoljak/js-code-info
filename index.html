@@ -105,12 +105,19 @@
       const linecountout = document.querySelector('[name="line-count"]')
       const blankcountout= document.querySelector('[name="blank-line-count"]')
       const charcounting= document.querySelector('[name="char-count"]')
-      const highlightedCode = document.querySelector('code')
+      const highlighcode = document.querySelector('code')
       
       document.querySelector('textarea').addEventListener('input', update)
 
-      function update() {}
-        const textareaValue = textarea.value // get the value of the textarea
+      function escapeHtml(text) {
+    text = text.replace(/&/g, '&amp;')
+    text = text.replace(/</g, '&lt;')
+    text = text.replace(/>/g, '&gt;')
+    return text
+      }
+
+      function update() {
+        const text = textarea.value // get the value of the textarea
         const lines = text.split('\n') // split the value into lines
         const totallines = lines.length // count the total number of lines
         let blanklines = 0 // start blank line counter
@@ -129,11 +136,16 @@
         charcounting.textContent = totalChars // update character count output
         
         let highlighted = escapeHtml(text)
-        for (let word in keywords) {
+        for (let word of keywords) {
           const wordpattern= new RegExp('\\b' + word + '\\b', 'g')
           highlighted = highlighted.replace(wordpattern, '<span class="keyword">' + word + '</span>')
         }
-        codeBlpoc
+        if (highlighted === '') {
+        highlighcode.innerHTML = ' '
+        } else {
+          highlighcode.innerHTML = highlighted
+        }
+      }
       update()
     </script>
   </body>
