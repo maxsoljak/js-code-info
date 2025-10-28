@@ -100,12 +100,44 @@
         'var',
         'while',
       ]
-
+      
+      const textarea = document.querySelector('textarea')
+      const linecountout = document.querySelector('[name="line-count"]')
+      const blankcountout= document.querySelector('[name="blank-line-count"]')
+      const charcounting= document.querySelector('[name="char-count"]')
+      const highlightedCode = document.querySelector('code')
+      
       document.querySelector('textarea').addEventListener('input', update)
 
       function update() {}
+        const textareaValue = textarea.value // get the value of the textarea
+        const lines = text.split('\n') // split the value into lines
+        const totallines = lines.length // count the total number of lines
+        let blanklines = 0 // start blank line counter
+        
+        
+        for (const line of lines) { // loop through each line
+          if (line.trim() === '') { // check if the line is blank
+            blanklines++
+          }
+        }
+        const totalChars = text.length // count the number of characters
 
+
+        linecountout.textContent = totallines // update line count output
+        blankcountout.textContent = blanklines // update blank line count output
+        charcounting.textContent = totalChars // update character count output
+        
+        let highlighted = escapeHtml(text)
+        for (let word in keywords) {
+          const wordpattern= new RegExp('\\b' + word + '\\b', 'g')
+          highlighted = highlighted.replace(wordpattern, '<span class="keyword">' + word + '</span>')
+        }
+        codeBlpoc
       update()
     </script>
   </body>
 </html>
+
+
+
